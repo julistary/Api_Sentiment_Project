@@ -4,6 +4,8 @@ import nltk
 from nltk.corpus import stopwords
 import matplotlib.pyplot as plt
 import collections
+import regex
+import requests
 
 def clean_script(whole_script):
     whole_script = whole_script.replace("[", "")
@@ -58,3 +60,15 @@ def whole_script_common(df,main_characters,stop_words):
     for word, count in word_counter.most_common(10):
         word_c[word] = count
     return (word_c)
+
+
+def times(main_characters):
+    import re
+    url_times = "http://localhost:5000/times/"
+    times = {}
+    for c in main_characters:
+        person = c
+        nr_quotes = requests.get(url_times + person).content
+        nr = re.findall(r'\d+',str((nr_quotes)))
+        times[c] = int(nr[0])
+    return times
