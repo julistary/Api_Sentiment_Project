@@ -76,4 +76,4 @@ def wordch(character):
     return jsonify(sentiment_)
 
 
-app.run("https://julsfriendsapi2410.herokuapp.com", debug=True)
+app.run(debug=True)
