@@ -64,8 +64,8 @@ url = "http://localhost:5000/sentiment/Phoebe"
 
 <img width=300 src="https://media.giphy.com/media/LPs5pRt1OiaHqgTQoT/giphy.gif">
 
-#### What is the word Rachel says most often?
+#### What is the word Chandler says most often?
 
 url = "http://localhost:5000/word/Chandler"
 
-<img width=300 src="https://media.giphy.com/media/KCkFCX7iyRvsmq3rRZ/giphy.gif">
+<img width=300 src="https://media.giphy.com/media/H6hurOxfrUNWoChAVf/giphy.gif">
