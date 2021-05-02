@@ -16,9 +16,9 @@ def download_dataset():
     user = url.split("/")[-2]
     
     #Download, decompress and leaves only the csv
-    download = f"kaggle datasets download -d {user}/{endopint}; say -v Samantha 'downloading'"
-    decompress = f"tar -xzvf {endopint}.zip; say -v Samantha 'unzipping'"
-    delete = f"rm -rf {endopint}.zip; say -v Samantha 'erasing the zip'"
+    download = f"kaggle datasets download -d {user}/{endopint}"
+    decompress = f"tar -xzvf {endopint}.zip"
+    delete = f"rm -rf {endopint}.zip"
     make_directory = "mkdir data"
     lista = "ls >> archivos.txt"
     
@@ -32,7 +32,7 @@ def download_dataset():
     #Moves the .csv into the data directory
     for i in nueva:
         if i.endswith(".csv"):
-            move_and_delete = f"mv {i} data/dataset.csv; rm archivos.txt; say -v Samantha 'moving dataset'"
+            move_and_delete = f"mv {i} data/dataset.csv; rm archivos.txt"
             return os.system(move_and_delete)
 
 

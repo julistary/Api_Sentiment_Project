@@ -22,7 +22,7 @@ def clean_script(whole_script):
 
 def stopwds():
     stop_words = stopwords.words('english')
-    stop_words += ['tell', 'im', 'hi','uh' ,'oh', 'dont', 'well', 'know', 'gonna', 'get', 'okay', 'youre', 'like', 'thats', 'yeah', 'think', 'she', 'yknow', 'really', 'mean', 'right', 'look', 'to', 'go', 'hey', 'uhh', 'got', 'come', 'see', 'cant', 'one', 'want', 'going', 'say', 'guys', 'good', 'back', 'god', 'ok', 'wanna']
+    stop_words += ['tell', 'im', 'hi','uh' ,'oh', 'dont', 'well', 'gonna', 'get', 'okay', 'youre', 'like', 'thats', 'yeah', 'think', 'she', 'yknow', 'really', 'mean', 'right', 'look', 'to', 'go', 'hey', 'uhh', 'got', 'come', 'see', 'cant', 'one', 'want', 'going', 'say', 'good', 'back', 'ok', 'wanna']
     return stop_words
 
 
