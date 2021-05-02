@@ -17,87 +17,55 @@
 
 #### ¿How many quotes does Monica say?
 
-url = "http://localhost:5000/times/" 
-person = "Monica" 
-times = requests.get(url + person) 
-times.content  
+url = "http://localhost:5000/times/Monica" 
 
 <img width=300 src="https://media.giphy.com/media/LaabpwEUXVUhq/giphy.gif">
 
 #### Give me a quote from Rachel
 
-url = "http://localhost:5000/character/"
-person = "Rachel"
-quotes = requests.get(url + person).json()
-quotes[18076]['quote']
+url = "http://localhost:5000/character/Rachel"
 
 <img width=300 src="https://media.giphy.com/media/igsmXEkeyfPPgfU2yI/giphy.gif">
 
 #### Give me a quote from the season 5
 
-url = "http://localhost:5000/season/"
-person = "5"
-quotes = requests.get(url + person).json()
-f"{quotes[9580]['author']} - {quotes[9580]['quote']}"
+url = "http://localhost:5000/season/5"
+
 
 <img width=300 src="https://media.giphy.com/media/llToceLTKQj0R1Asid/giphy.gif">
 
 #### Give me a quote from the episode ` Ross's Tan `
 
-url_times = "http://localhost:5000/episode/"
-person = "Ross's Tan"
-quotes = requests.get(url_times + person).json()
-quotes[88]['quote']
+url = "http://localhost:5000/episode/Ross's Tan"
 
 <img width=300 src="https://media.giphy.com/media/12bO6mIZRgRHKU/giphy.gif">
 
 #### Give me a quote from the `S10 E13 `
 
-url_1 = "http://localhost:5000/season/"
-url_2 = "/episode/"
-season = "10"
-episode = "13"
-quotes = requests.get(url_1 + season + url_2 + episode).json()
-quotes[9]['quote']
+url = "http://localhost:5000/season/10/episode/13"
 
 <img width=300 src="https://media.giphy.com/media/XdU9ThNglPBHLsOjDz/giphy.gif">
 
 #### Give me a quote from Janice from the `S5 E12 `
 
-url_1 = "http://localhost:5000/season/"
-url_2 = "/episode/"
-url_3 = "/character/"
-season = "5"
-episode = "12"
-character = "Janice"
-quotes = requests.get(url_1 + season + url_2 + episode + url_3 + character).json()
-quotes[3]['quote']
+url= "http://localhost:5000/season/5/episode/12/Janice"
 
 <img width=300 src="https://media.giphy.com/media/hXOc9DJufLxpzo82zq/giphy.gif">
 
 #### Give me a quote that contains `Pivot`
 
-url = "http://localhost:5000/words/"
-word = "Pivot"
-quotes = requests.get(url + word).json()
-quotes[0]['quote']
+url = "http://localhost:5000/words/Pivot"
 
 <img width=300 src="https://media.giphy.com/media/2OP9jbHFlFPW/giphy.gif">
 
 #### How would you define Phoebe?
 
-url = "http://localhost:5000/sentiment/"
-character = "Phoebe"
-sent = requests.get(url + character).json()
-sent[0]['sentiment']
+url = "http://localhost:5000/sentiment/Phoebe"
 
 <img width=300 src="https://media.giphy.com/media/LPs5pRt1OiaHqgTQoT/giphy.gif">
 
 #### What is the word Rachel says most often?
 
-url = "http://localhost:5000/word/"
-character = "Chandler"
-sent = requests.get(url + character).json()
-sent[0]['word']
+url = "http://localhost:5000/word/Chandler"
 
 <img width=300 src="https://media.giphy.com/media/KCkFCX7iyRvsmq3rRZ/giphy.gif">
