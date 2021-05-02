@@ -58,3 +58,5 @@ The endpoints created are:
 - friends_json and script json created during its execution
 - Data folder with the csv from Kaggle
 
+## TO DO
+- Deploy it to heroku 
