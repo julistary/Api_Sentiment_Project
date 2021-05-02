@@ -1,6 +1,9 @@
 from config.configuration import db, collection
 
 def number_quotes(character):
+    """
+    Function that returns the number of quotes that a certain character says.
+    """
     proj = {"_id": 0, "index": 0}
     query = {"author": f"{character}"}
     nr = len(list(collection.find(query,proj)))
@@ -8,7 +11,7 @@ def number_quotes(character):
 
 def quotes_character(character):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns all the quotes that a certain character says.
     """
     proj = {"_id": 0, "index": 0}
     query = {"author": f"{character}"}
@@ -17,7 +20,7 @@ def quotes_character(character):
 
 def quotes_episode(episode_title):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns all the quotes of a certain episode (name of the episode must be given).
     """
     proj = {"_id": 0, "index": 0}
     query = {"episode_title": f"{episode_title}"}
@@ -26,7 +29,7 @@ def quotes_episode(episode_title):
 
 def quotes_season(season):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns all the quotes of a certain season.
     """
     proj = {"_id": 0, "index": 0}
     query = {"season": f"{season}"}
@@ -36,7 +39,8 @@ def quotes_season(season):
 
 def quotes_season_episode(season, episode):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns all the quotes of a certain episode (number of the episode and must be given).
+
     """
     proj = {"_id": 0, "index": 0}
     query = {"season": f"{season}", "episode_number": f"{episode}"}
@@ -45,7 +49,7 @@ def quotes_season_episode(season, episode):
 
 def quotes_season_episode_character(season, episode,character):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns all the quotes of a certain episode said by a certain character (number of the episode and must be given).
     """
     proj = {"_id": 0, "index": 0}
     query = {"season": f"{season}", "episode_number": f"{episode}", "author": f"{character}"}
@@ -54,7 +58,8 @@ def quotes_season_episode_character(season, episode,character):
 
 def quotes_word(word):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns all the quotes that contains a certain word or sentence.
+
     """
     proj = {"_id": 0, "index": 0}
     query = {"quote" : {'$regex':f"{word}"}}
@@ -63,7 +68,7 @@ def quotes_word(word):
 
 def sentiment(character):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns the main sentiment of a certain character.
     """
     proj = {"_id": 0, "word": 0}
     query = {"character" : f"{character}"}
@@ -72,7 +77,8 @@ def sentiment(character):
 
 def word(character):
     """
-    Función que devuelve todas las frases un personaje
+    Function that returns the most repeated word of a certain character
+
     """
     proj = {"_id": 0, "sentiment": 0}
     query = {"character" : f"{character}"}
