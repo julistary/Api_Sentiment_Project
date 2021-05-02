@@ -1,4 +1,6 @@
 
+# API Documentation 📄
+
 * "http://localhost:5000/times/**character_name**/" : it gives the number of quotes that a certain character says.
 * "http://localhost:5000/character/**character_name**/" : it gives all the quotes said by a certain character.
 * "http://localhost:5000/season/**season_number**" : it gives all the quotes from a certain season.
@@ -11,14 +13,14 @@
 
 ⚠ What is enclosed in asterisks is the endpoint that must be added by the user to access the specific information. 
 
-Some examples: 
+## Some examples: 
 
 #### ¿How many quotes does Monica say?
 
-url = "http://localhost:5000/times/"
-person = "Monica"
-times = requests.get(url + person)
-times.content
+url = "http://localhost:5000/times/" 
+person = "Monica" 
+times = requests.get(url + person) 
+times.content  
 
 <img width=300 src="https://media.giphy.com/media/LaabpwEUXVUhq/giphy.gif">
 
