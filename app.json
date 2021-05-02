@@ -18,6 +18,9 @@
           "test": "python manage.py test"
         }
       }
-    }
+    },
+    "scripts": {
+        "start": "node index.js"
+     }
   }
   
