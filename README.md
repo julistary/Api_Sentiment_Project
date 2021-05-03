@@ -54,7 +54,7 @@ The endpoints created are:
     * tools folder with the functions 
     * mongoapi.py where the API is created 
     * README.md file
-- Procfile and runtime.txt (required for deploying with Heroku)
+- Procfile, runtime.txt and dump folder (required for deploying with Heroku)
 - friends_json and script json created during its execution
 - Data folder with the csv from Kaggle
 
