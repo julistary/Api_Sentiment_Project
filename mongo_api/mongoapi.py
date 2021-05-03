@@ -76,4 +76,4 @@ def wordch(character):
     return jsonify(sentiment_)
 
 
-app.run("0.0.0.0", PORT, debug=False)
+app.run("0.0.0.0", PORT, debug=True)
