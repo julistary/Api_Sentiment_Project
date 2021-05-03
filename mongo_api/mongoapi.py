@@ -4,7 +4,7 @@ import json
 import markdown.extensions.fenced_code
 import tools.getdata as get
 import tools.postdata as pos
-
+from config.configuration import PORT
 
 
 app = Flask(__name__)
@@ -76,4 +76,4 @@ def wordch(character):
     return jsonify(sentiment_)
 
 
-app.run(debug=True)
+app.run("0.0.0.0", PORT, debug=False)

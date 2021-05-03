@@ -5,6 +5,7 @@ from pymongo import MongoClient
 dotenv.load_dotenv()
 
 dburl = os.getenv("URL")
+PORT = os.getenv("PORT")
 
 print(dburl)
 if not dburl:
