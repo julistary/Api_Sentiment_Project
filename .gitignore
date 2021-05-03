@@ -1,8 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-mongo_api.env 
 .DS_Store
 .ipynb_checkpoints
 .env 
 .Dockerfile
 .dockerignore
+mongo_api/.env
