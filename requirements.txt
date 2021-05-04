@@ -14,14 +14,17 @@ cycler==0.10.0
 decorator==5.0.7
 defusedxml==0.7.1
 deprecation==2.1.0
+dnspython==2.1.0
 entrypoints==0.3
+Flask==1.1.2
 gunicorn==20.1.0
 idna==2.10
 ipykernel==5.5.3
 ipython==7.22.0
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
-jedi
+itsdangerous==1.1.0
+jedi @ file:///opt/concourse/worker/volumes/live/904d39c2-2f20-46c0-487d-9a3d2725434d/volume/jedi_1611333757211/work
 Jinja2==2.11.3
 joblib==1.0.1
 json5==0.9.5
@@ -36,6 +39,7 @@ jupyterlab-server==2.5.0
 jupyterlab-widgets==1.0.0
 kaggle==1.5.12
 kiwisolver==1.3.1
+Markdown==3.3.4
 MarkupSafe==1.1.1
 matplotlib==3.4.1
 mistune==0.8.4
@@ -51,8 +55,8 @@ packaging==20.9
 pandas==1.2.4
 pandocfilters==1.4.3
 parso==0.8.2
-pexpect
-pickleshare 
+pexpect @ file:///opt/concourse/worker/volumes/live/8701bb20-ad87-46c7-5108-30c178cf97e5/volume/pexpect_1594383388344/work
+pickleshare @ file:///opt/concourse/worker/volumes/live/93ec39d8-05bb-4f84-7efc-98735bc39b70/volume/pickleshare_1594384101884/work
 Pillow==8.2.0
 prometheus-client==0.10.1
 prompt-toolkit==3.0.18
@@ -63,6 +67,7 @@ pymongo==3.11.3
 pyparsing==2.4.7
 pyrsistent==0.17.3
 python-dateutil==2.8.1
+python-dotenv==0.17.1
 python-slugify==4.0.1
 pytz==2021.1
 pyzmq==22.0.3
@@ -79,9 +84,10 @@ text-unidecode==1.3
 tomlkit==0.7.0
 tornado==6.1
 tqdm==4.60.0
-traitlets 
+traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
 urllib3==1.26.4
 vaderSentiment==3.3.2
-wcwidth 
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
+Werkzeug==1.0.1
 widgetsnbextension==3.5.1

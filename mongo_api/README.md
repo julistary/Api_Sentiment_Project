@@ -10,6 +10,7 @@
 * "http://localhost:5000/words/**word**/": it gives all the words that contain a certain word or sentence. 
 * "http://localhost:5000/sentiment/**character_name**/": it gives the predominant sentiment polarity of a certain character.
 * "http://localhost:5000/word/**character_name**/": it gives the most repeated word of a certain character.
+* "http://localhost:5000/word/newcharacter/ : add data to the DB. 
 
 ⚠ What is enclosed in asterisks is the endpoint that must be added by the user to access the specific information. 
 

@@ -22,7 +22,7 @@ The tools to be used are Flask, NLP, functions, string operations, pandas, mongo
 - [Json](https://docs.python.org/3/library/json.html)
 - [Dotenv](https://pypi.org/project/python-dotenv/)
 - [Re](https://docs.python.org/3/library/re.html)
-
+- [Seaborn](https://seaborn.pydata.org/)
 
 ## My project 👩🏼‍💻
 The first thing I did was importing and cleaning a `Friends quotes` dataset from [Kaggle](https://www.kaggle.com/ryanstonebraker/friends-transcript). 
@@ -32,17 +32,20 @@ Then, I enriched it with the `machine learning`tool `nltk`: analyse, per charact
 Once it was ready, using an endpoint, I added the data to `MongoDB` so I could start creating `get endpoints`. 
 
 The endpoints created are: 
-* "http://localhost:5000/times/**character_name**/" : it gives the number of quotes that a certain character says.
-* "http://localhost:5000/character/**character_name**/" : it gives all the quotes said by a certain character.
-* "http://localhost:5000/season/**season_number**/" : it gives all the quotes from a certain season.
-* "http://localhost:5000/episode/**episode_name**/" : it gives all the quotes from a certain episode (name of the episode must be introduced).
-* "http://localhost:5000/season/**season_number**/episode/**episode_number**/" : it gives all the quotes from a certain episode (number of the episode and of the season must be introduced).
-* "http://localhost:5000/season/**season_number**/episode/**episode_number**/character/**character_name**/" : it gives all the quotes from a certain episode said by a concrete character (number of the episode and of the season must be introduced).
-* "http://localhost:5000/words/**word**/": it gives all the words that contain a certain word or sentence. 
-* "http://localhost:5000/sentiment/**character_name**/": it gives the predominant sentiment polarity of a certain character.
-* "http://localhost:5000/word/**character_name**/": it gives the most repeated word of a certain character.
+* "http://localhost:5000/times/**character_name**/" : it gives the number of quotes that a certain character says. (**GET**)
+* "http://localhost:5000/character/**character_name**/" : it gives all the quotes said by a certain character. (**GET**)
+* "http://localhost:5000/season/**season_number**/" : it gives all the quotes from a certain season. (**GET**)
+* "http://localhost:5000/episode/**episode_name**/" : it gives all the quotes from a certain episode (name of the episode must be introduced). (**GET**)
+* "http://localhost:5000/season/**season_number**/episode/**episode_number**/" : it gives all the quotes from a certain episode (number of the episode and of the season must be introduced). (**GET**)
+* "http://localhost:5000/season/**season_number**/episode/**episode_number**/character/**character_name**/" : it gives all the quotes from a certain episode said by a concrete character (number of the episode and of the season must be introduced). (**GET**)
+* "http://localhost:5000/words/**word**/": it gives all the words that contain a certain word or sentence. (**GET**)
+* "http://localhost:5000/sentiment/**character_name**/": it gives the predominant sentiment polarity of a certain character. (**GET**)
+* "http://localhost:5000/word/**character_name**/": it gives the most repeated word of a certain character. (**GET**)
+* "http://localhost:5000/word/newcharacter/ : add data to the DB. (**POST**)
 
 ⚠ What is enclosed in ** is the endpoint that must be added by the user to access the specific information. 
+
+⚠ The URL is a localhost.
 
 ## Content of the repository 👀
 
@@ -59,4 +62,6 @@ The endpoints created are:
 - Data folder with the csv from Kaggle
 
 ## TO DO
-- Deploy it to heroku 
+- Deploy it to heroku
+- Order repository
+- Sentiment analysis as an endpoint 
